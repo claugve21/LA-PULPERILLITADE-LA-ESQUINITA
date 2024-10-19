@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Patua One';
+}
+
+header {
+    background-color: #06303d;
+    color: #0a303b;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.navbar .logo img {
+    height: 100px;
+    padding: 15px 15px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 5px 20px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #e8e6e6;
+    text-decoration: none;
+    font-size: 150%;
+    font-family: 'Afacad Flux';
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del Carrusel */
+.carousel {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 760px;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(2, 4, 32);
+    line-height: 0.5;
+}
+
+.carousel-text h1 {
+    font-size: 60px;
+}
+
+.carousel-text p {
+    font-size: 35px;
+}
+
+/* Efecto de deslizamiento */
+.carousel-slide.active {
+    display: block;
+}
+
+/* Opcional: Puntos de navegación */
+.carousel-dots {
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-dots span {
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 5px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.carousel-dots span.active {
+    background-color: #333;
+}
+
+/* Sección de Productos */
+.productos-section {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.productos-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.producto-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.producto-item img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.producto-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.producto-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.producto-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Galería de Imágenes */
+.galeria-section {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galeria-item img {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.galeria-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-galeria {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0c2e38;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+
+.btn-galeria:hover {
+    background-color: #e8e6e6;
+    color: #0c2e38;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #0c2e38;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #3836b4;
+}
+
+footer p {
+    margin: 5px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer a {
+    color: #e8e6e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+/* Pantalla de carga */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #06303d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader-container {
+    text-align: center;
+}
+
+.loader-logo {
+    width: 150px;
+    height: 150px;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.loader-container h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 300px;
+    height: 15px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    transition: width 0.3s;
+}
+
+#loading-text {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Ocultar pantalla de carga después de la animación */
+body.loaded #loading-screen {
+    display: none;
+}

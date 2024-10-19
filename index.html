@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA ESQUINITA</title>
+    <!-- ../css/styles.css el ../ es para retroceder a carpetas anteriores -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo pagina web.jpg" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#galeria">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">categorias</a></li>
+            </ul>
+        </nav>
+        <!-- Sección del Carrusel -->
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="img/the ile 2.avif" alt="Imagen 1">
+                <div class="carousel-text">
+                    <h1>PULPERÍA LA ESQUINITA</h1>
+                    <p>Tu rincón de delicias y buenos momentos</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="img/the ile 3.jpeg" alt="Imagen 2">
+                <div class="carousel-text">
+                    <h1>PULPERÍA LA ESQUINITA</h1>
+                    <p>Tu rincón de delicias y buenos momentos</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="img/the ile 4.avif" alt="Imagen 3">
+                <div class="carousel-text">
+                    <h1>PULPERÍA LA ESQUINITA</h1>
+                    <p>Tu rincón de delicias y buenos momentos</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sección de categorias -->
+        <section id="productos" class="productos-section">
+            <h2>Nuestras Categorías de Productos</h2>
+            <div class="productos-grid">
+                <!-- Categoría 1 -->
+                <div class="producto-item">
+                    <img src="img/carne.jpg" alt="Categoría 1">
+                    <h3>Carnes</h3>
+                    <p>Cortes de calidad.</p>
+                </div>
+                <!-- Categoría 2 -->
+                <div class="producto-item">
+                    <img src="img/frutas.jpeg" alt="Categoría 2">
+                    <h3>Frutas y Verduras</h3>
+                    <p>Del campo a tu mesa</p>
+                </div>
+                <!-- Categoría 3 -->
+                <div class="producto-item">
+                    <img src="img/soda.webp" alt="Categoría 3">
+                    <h3>Soda</h3>
+                    <p>Naturalmente burbujeante</p>
+                </div>
+                <!-- Categoría 4 -->
+                <div class="producto-item">
+                    <img src="img/chips.jpg" alt="Categoría 4">
+                    <h3>Chips & Frites</h3>
+                    <p>Crujientes momentos de felicidad</p>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de galeria -->
+        <section id="galeria" class="galeria-section">
+            <h2>Galería de Imágenes</h2>
+            <div class="galeria-grid">
+                <!-- Imagenes -->
+                <div class="galeria-item">
+                    <img src="img/caprisun.png" alt="Galería 1">
+                </div>
+                <div class="galeria-item">
+                    <img src="img/carne.png" alt="Galería 2">
+                </div>
+                <div class="galeria-item">
+                    <img src="img/cheerios.png" alt="Galería 3">
+                </div>
+                <div class="galeria-item">
+                    <img src="img/cheese.png" alt="Galería 4">
+                </div>
+                <div class="galeria-item">
+                    <img src="img/limon.png" alt="Galería 5">
+                </div>
+                <div class="galeria-item">
+                    <img src="img/leche .png" alt="Galería 6">
+                </div>
+                <div class="galeria-item">
+                    <img src="img/bertolli.png" alt="Galería 7">
+                </div>
+                <div class="galeria-item">
+                    <img src="img/cordero.png" alt="Galería 8">
+                </div>
+                <!-- Más imágenes ocultas -->
+                <div class="galeria-item hidden">
+                    <img src="img/crema.png" alt="Galería 9">
+                </div>
+                <div class="galeria-item hidden">
+                    <img src="img/rosal.png" alt="Galería 10">
+                </div>
+                <!-- Puedes añadir más imágenes ocultas -->
+            </div>
+            <button id="mostrar-mas" class="btn-galeria">Mostrar más</button>
+        </section>
+
+        <section id="nosotros" class="nosotros-section"></section>
+            <footer>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p>PULPERILLA LA ESQUINITA | Horario: 8:00 AM - 8:00 PM</p>
+                <p>&copy; 2024 PULPERILLA LA ESQUINITA - Todos los derechos reservados</p>
+                <p>Diseñado por <a href="https://www.instagram.com/clau_gve/#" target="_blank">CLAUDIA GUEVARA</a></p>
+            </footer>
+        </section>
+    </header>
+    <script src="scripts.js"></script>
+</body>
+    <!-- Pantalla de carga -->
+    <div id="loading-screen">
+        <div class="loader-container">
+            <img src="img/logo pagina web.jpg" alt="Logo" class="loader-logo">
+            <h1>Pulperillita La Esquinita</h1>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <p id="loading-text">0%</p>
+        </div>
+    </div>
+
+    <!-- El resto del contenido de tu página, como el header y el nav -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo pagina web.jpg" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#galeria">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">categorias</a></li>
+            </ul>
+        </nav>
+        <!-- Resto del contenido -->
+    </header>
+</body>
+
+</html>
